@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "myDTD.dtd">
+
+<teiCorpus> 
+  <teiHeader xml:id="comune">
+    <fileDesc> <!--contiene le informazioni relative al file-->
+       <titleStmt> <!--figlio obbligatorio: titolo dell'edizione digitale e responsabili-->
+            <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+        <title type="main"> Corrispondenze </title>
+
+            <!-- TRASCRITTORE nome e cognome-->
+        <respStmt>
+            <resp>Trascritto da:</resp>
+            <name xml:id="Elisa">Elisa Dominutti</name>
+            <name xml:id="Angelica">Angelica Maria Puddu</name>
+        </respStmt>
+            
+            <!-- ENTE DI APPARTENENZA -->
+        <respStmt>
+            <resp>Ente di Appartenenza:</resp>
+            <name type="comune" xml:id="SP">Comune della Spezia</name>
+        </respStmt>
+            
+      </titleStmt>
+
+      <editionStmt>
+          <edition>Studenti di Codifica di Testi, Corso di Laurea in Informatica Umanistica, <orgName ref="#UNIPI"> Università di Pisa  </orgName>
+               <!-- COMPILAZIONE -->
+            <date when="2018">2018</date>
+          </edition>
+            
+            <!-- NOME COMPILATORE -->
+          <respStmt>
+                <resp>Codificato da:</resp>
+                <name xml:id="Castagneto">Tommaso Castagneto</name>
+          </respStmt>
+            
+            <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+          <respStmt>
+              <resp>Compilato da:</resp>
+              <name ref="#Castagneto">Tommaso Castagneto</name>
+          </respStmt>
+          
+          <respStmt>
+                <resp>Responsabile scientifico:</resp>
+                <name xml:id="GP">Giacomo Paolicchi</name>
+                <name xml:id="ES">Enrica Salvatori</name>
+          </respStmt>
+
+          <respStmt>
+              <resp>Funzionario responsabile:</resp>
+              <name xml:id="ER">E. Ratti</name>
+          </respStmt>
+       </editionStmt>
+        
+       <publicationStmt> <!--figlio obbligatorio:  come l'edizione digitale viene pubblicata-->
+            <publisher> 
+                <orgName ref="#UNIPI"> Unipi </orgName> 
+            </publisher>  
+            <pubPlace>Pisa</pubPlace>
+            <availability>
+                <p>Disponibile solo con licenza</p>
+            </availability>
+            <date when="2019">2019</date>
+            <distributor>LabCD</distributor>
+            <address>
+                <addrLine>Laboratorio di Cultura Digitale - <orgName ref="#UNIPI"> Università di Pisa </orgName></addrLine>
+                <addrLine> <placeName> Pisa </placeName> </addrLine>
+            </address>
+        </publicationStmt>
+        
+        <sourceDesc>  <!--figlio obbligatorio di fileDesc, fornisce informazioni sulla fonte materiale-->
+            <bibl>
+                <interp> 
+                    tre cartoline scritte da Giovanni Coliola a membri della famiglia Turtura, quali Oliva e Giuseppe.
+                </interp>                     
+            </bibl>
+            
+            <msDesc>
+                <msIdentifier>
+                    <country>Italia</country>
+                    <settlement>La Spezia (SP)</settlement>
+                    <!-- COLLOCAZIONE SPECIFICA -->
+                    <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                </msIdentifier>
+               
+                
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <objectType>Cartolina</objectType>
+                                <!-- MATERIALI -->
+                                <material>Carta</material>
+                                <!-- DIMENSIONE -->
+                                <dimensions unit="cm">
+                                    <height>14</height>
+                                    <width>9</width>
+                                </dimensions>
+                            </support>
+                            <condition>Buono</condition>
+                        </supportDesc>
+                    </objectDesc>
+                
+                <handDesc> 
+                     <handNote>
+                         <interp>
+                             Abbiamo individuato due momenti distinti in cui collocare la creazione e la scrittura delle cartoline. 
+                             La prima fase, infatti, è attribuita al layout della cartolina, alle inserzioni stampate e quindi 
+                             alla sua creazione fisica da parte dell'editore e/o del pittore dell'immagine.
+                             La seconda fase, invece, riguarda la scrittura del testo da parte del mittente e l'aggiunta del francobollo.</interp>
+                               
+                        <interp>
+                             Si potrebbe individuare, inoltre, una terza fase in cui è stato aggiunto un timbro da parte dell'ufficio postale.
+                             Ci sono però delle eccezioni: nel caso della seconda cartolina non vi è nè francobollo nè timbro. 
+                             L'ipotesi che potrebbe spiegare tale anomalia è legata ad un recapito diretto della stessa da parte di un conoscente comune.
+                        </interp>                      
+                     </handNote> 
+                </handDesc>
+                    
+                <accMat> <!--eventuali dettagli riguardanti materiale aggiuntivo collegato al manoscritto in esame-->
+                      Altre cartoline della stessa corrispondenza fanno parte della raccolta del Museo Civico Etnografico "Giovanni Podenzana" di La Spezia.
+                </accMat>
+              </physDesc>          
+           </msDesc>
+            
+           <listOrg>
+                <org xml:id="UNIPI">
+                    <orgName> Università di <settlement> Pisa </settlement> </orgName>
+                    <desc> 
+                        <quote > L'Università di Pisa (UniPi) è una delle più antiche università
+                            italiane e d'Europa. Fondata nel 1343 .
+                            <ptr target="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Pisa"/>
+                        </quote> 
+                    </desc>
+                </org>
+            </listOrg>
+            
+            
+   
+            <listRelation >
+                <p> 
+                    <interp> 
+                        Oliva e Giovanni sono legati con certezza da una relazione di corrispondenza che va dal 1911 al 1918, ma
+                        molto probabilmente i due erano anche uniti da una relazione sentimentale più profonda: il matrimonio.
+                        Nel "Diario Ravennate Indicatori - 1933" di Muratori è presente il nome della donna, indicato come "Oliva Turtura Coliola".
+                        Era infatti usanza comune nel Novecento rivolgersi a una donna sposata con il cognome del marito. 
+                    </interp>
+                    
+                    <ptr xml:id="Annuario_del_Ministero_dell_Educazione_n" target="Annuario.pdf" n="763" /> 
+                    
+                    <interp>    
+                        Per esclusione Giuseppe potrebbe essere il padre di Oliva, sia per il medesimo cognome, che per i termini rispettosi con cui
+                        Giovanni si rivolge lui nella terza cartolina.
+                    </interp>
+                </p> 
+            </listRelation>
+
+        </sourceDesc>       
+    </fileDesc>
+
+    
+    <encodingDesc> <!--descrizione della codifica unica per tutte le cartoline-->
+        <charDecl>
+            <desc> 
+                La codifica è stata applicata su un testo scritto con caratteri dell'alfabeto latino nell'italiano 
+                dei primi del Novecento in corsivo
+            </desc>
+           <char/> <!--figlio obbligatorio-->
+        </charDecl> 
+        
+        <projectDesc> 
+            <p> 
+                Lo scopo del progetto d'esame è collocato all'interno di un esperimento più grande che vede
+                la codifica di varie cartoline della Grande Guerra conservate nel Museo Civico Etnografico di La Spezia.
+                I nostri dati si riferiscono alle informazioni ricavate dalle cartoline stesse e da alcune interpretazioni e 
+                ricerche personali ricavate dall'archivio storico-digitale dell'Università di Bologna, Wikipedia e altri siti web che abbiamo ritenuto affidabili ed esaustivi.
+            </p> 
+        </projectDesc>
+    
+        <editorialDecl>
+            
+            <p> Linee vuote, ritorni a capo, lettere maiuscole/minuscole e punteggiatura mantenuti</p>
+            <p> Scritte stampate sulle cartoline e relative alla loro stampa/decorazione riprodotte </p>
+ 
+       </editorialDecl>
+
+    </encodingDesc>
+    
+ </teiHeader>
+    
+    
+ <xi:include href="cartolina_1.xml"/>   
+ <xi:include href="cartolina_2.xml"/>     
+ <xi:include href="cartolina_3.xml"/>
+    
+
+</teiCorpus>

@@ -1,0 +1,445 @@
+h1 {
+    color: 	#778899;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Lobster', cursive;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color:  #ffe6e6;
+}
+
+a {
+    text-decoration: none; 
+}
+
+
+
+#cambiacartolina {
+  cursor: pointer;
+  margin-top:0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  color: #777674;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  text-align:center;
+  font-family: 'Lobster', cursive;   
+  color: #777674;
+  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+
+  padding: 0.5em 1.5em;
+  outline: none;
+  border-radius: 7px;
+  background-image:
+  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+  linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+
+
+#buttonAbout {
+  cursor: pointer;
+  float:right;
+  position: fixed;
+  right:20px;
+  top:20px; 
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  text-align:center;
+  font-family: 'Lobster', cursive;   
+  color: #777674;
+  font-weight: bold;
+  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+
+  padding: 0.5em 1.5em;
+  outline: none;
+  border-radius: 7px;
+  background-image:
+  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+  linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+  z-index: 2;
+}
+#cambiacartolina:hover , #bottonefronte:hover , #bottoneretro:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+#cambiacartolina:active , #bottonefronte:active , #bottoneretro:active {
+  top: 1px;
+}
+
+
+#img1 , #img2 , #img3 {
+      cursor: pointer;  
+      margin-left: 1%;
+      margin-top:0%;
+      filter:drop-shadow(8px 8px 10px gray);
+      opacity: 1;
+}
+
+
+
+#img1:hover , #img2:hover , #img3:hover {
+	animation-name:scalaImmagine;
+	transform:scale(1.1,1.1);
+	animation-duration:1.2s;
+	opacity: 0.7;
+	
+}
+
+@keyframes scalaImmagine {
+    from {transform:scale(1,1);}
+    to {transform:scale(1.1,1.1);}
+}
+
+
+#blocchi{
+    display:flex;
+    position: relative;
+}
+
+.overlay {
+    width:90%;
+    height:90%;
+    position: relative;
+    transition: width .3s ease;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    
+}
+.container .centered{
+    visibility: hidden;
+}
+.container:hover .centered{
+    visibility: visible;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  color:black;
+  text-shadow: 0px 0px 12px white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+#bottonefronte {
+   margin-left: 10%;
+   margin-right: 2%;
+}
+
+#bottonefronte , #bottoneretro , #bottoneruota  {
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  text-align:center;
+  font-family: 'Lobster', cursive;   
+  color: #777674;
+  margin-right: 2%;
+  display: inline-block;
+  color: #777674;
+  font-weight: bold;
+ 
+  text-decoration: none;
+  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+ 
+  padding: 0.5em 1.5em;
+  outline: none;
+  border-radius: 7px;
+  background-image:
+  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+  linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+  linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+#section_1{
+  width: 100%;
+  height: 100%;
+}
+
+.intro{
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:3%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+#imgfronte_1   {
+  width: 75%;
+  height: 50%;
+  display: none;
+  margin-left:15%;
+  margin-top:20%;
+ 
+}
+
+ #imgfronte_2{
+   width: 75%;
+  height: 50%;
+  display: none;
+  margin-left:15%;
+  margin-top:20%;
+  
+ }
+ 
+ #imgfronte_3 {
+  width: 75%;
+  height: 53%;
+  display: none;
+  margin-left:15%;
+  margin-top:20%;
+
+ }
+ 
+ 
+#imgretro_1 , #imgretro_3 {
+ 
+ margin-left:5%;
+ display: none;
+ 
+}
+
+#imgretro_2 {
+
+  display: none;
+   margin-left:5%;
+   padding-top:13%;
+     
+
+}
+
+
+
+#section_2 {
+  display:none;
+  width: 100%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#container {
+  border:  3px #778899;
+  width: 95%;
+  padding:0;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom:5%;
+  background-color: white; 
+  border-bottom: 25px solid white;
+  filter:drop-shadow(5px 8px 12px gray);
+}
+
+#headContainer {
+  height: 8%;
+  width: 100%;
+  background-color: #5f9ea0;
+}
+
+#container_cartolina {
+    
+  width: 47%;
+  height:90%;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom:20%;
+}
+
+#container_testo {  
+  width: 47%;
+  height: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+ 
+  background-color:white;
+
+}
+
+
+#cartolina_1, #cartolina_2, #cartolina_3 {
+ display: none;
+ border-left:2px solid #5f9ea0;
+ margin-top:4%;
+padding-bottom:3%;
+ 
+ width:100%;
+}
+
+#dest {
+  text-align:left;
+}
+
+#dateline {
+  float: right;
+}
+
+#cardinal {
+  float:left;
+}
+
+#stamp {
+  text-align:right;
+}
+
+
+#main {
+  display:none;
+}
+
+
+h2 {
+  color: 	#778899;
+  font-family: 'Cinzel', serif;
+  font-size: 25px;
+  text-align:center;
+  font-family: 'Lobster', cursive;
+}
+
+h3 {
+  color: 	#778899;
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  text-align:left;
+  font-family: 'Lobster', cursive;
+}
+
+#org , #p1, #p2, #p3, #lisPlace, #cities_involved, #EditoreDisegno , #PubPlaceDisegno, #organization_involved{
+  display:none;
+}
+
+#scheda_bibliografica, #persons_involved, #notes , #EditorialInterpretation{
+    text-align: left;  
+}
+
+ #AttoCorrispondenza {
+       text-align: left;    
+ }
+ 
+ #AttCorr {
+     margin-top:-7%;
+     margin-left: -5%;
+ }
+
+#section_3{
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  margin-top: 10%;
+  display:none;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#about {
+    text-align:center;
+    width: 60%;
+    margin-left:20%;
+}
+ 
+ 
+#testoresto_1, #testoresto_2, #testoresto_3,#scrittastampata2, #destination1,#destination3, #secopen,#scritte_stampate_8,#scritte_stampate_10, #scritte_stampate_14 {
+    background-color:white;
+    margin-left: 5%;
+    margin-top:0;
+}
+
+#scritte_stampate_8{
+    padding-bottom:4%;
+    border-bottom: 2px solid #5f9ea0;
+}
+#scritte_stampate_10{
+    padding-bottom:2%;
+    border-bottom: 2px solid #5f9ea0;
+}
+#cartolina_1, #cartolina_2, #cartolina_3 {
+    display: none;
+  
+}
+
+#corbella, #nota_facsimile_terza_cartolina  {
+    display:none;
+ 
+    
+}
+
+#destination1, #destination3,#scrittastampata2, #scritte_stampate_1,#scritte_stampate_2, #scritte_stampate_3{
+font-style:italic;
+}
+
+#address_1, #address_3{
+  font-style:italic;
+  color:black;
+  font-weight:bold;
+  margin-left:5%;
+}
+
+#Archivio3 , #Archivio2, #Archivio1  {
+    margin-left: 5%;
+    
+}
+#testoresto_1,#testoresto_2, #testoresto_3{
+    font-weight:bold;
+      color:black;
+    
+}
+#secopen{
+
+ font-style:italic;
+}
+
+h4 {
+  color: 	#778899;
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  font-family: 'Lobster', cursive;
+  border-bottom: 0.5px grey solid;
+  margin-left:10%;
+  margin-bottom:10%;
+  text-align:right;
+  }
+  
+  #R1, #R2, #R3 {
+  width: 75%;
+  height: 45%; 
+  margin-left:15%;
+  margin-top:25%;
+ margin-bottom:15%;
+ display:none;
+  }

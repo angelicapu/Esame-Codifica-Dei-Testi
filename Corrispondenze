@@ -1,1 +1,23 @@
+Documentazione:
+-main.xml è il file principale di codifica contente il teiCorpus
+-cartolina1,xml, cartolina2.xml, cartolina3.xml sono i file contenenti le codifiche delle singole cartoline
+-stylesheet.xsl è il file contenente le regole di visualizzazione xslt
+-new.js è il file javascript associato
+-style.css contiene le regole di stile dell'html generato
+-main.html è la visualizzazione del progetto generata dall'Editor Oxygen
+-myDTD.dtd è lo schema DTD associato, generato con TEIROMA
+-i file .jpg sono le immagini utilizzate
 
+I moduli della TEI utilizzati nel progetto sono:
+-core
+-tei
+-header
+-textstructure
+-transcr
+-gaiji
+-analysis
+-certainty
+-dictionaries
+-namesdates
+-msdescription
+-figures

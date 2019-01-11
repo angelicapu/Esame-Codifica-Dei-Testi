@@ -7,6 +7,7 @@ Documentazione:
 -main.html è la visualizzazione del progetto generata dall'Editor Oxygen
 -myDTD.dtd è lo schema DTD associato, generato con TEIROMA
 -i file .jpg sono le immagini utilizzate
+- il file Archivio.pdf non è stato possibile inserirlo su Github a causa delle elevate dimensioni del file
 
 I moduli della TEI utilizzati nel progetto sono:
 -core
